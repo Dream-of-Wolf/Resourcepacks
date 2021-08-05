@@ -8,6 +8,8 @@ on:
     - 'assets/**'
     - 'pack.mcmeta'
     - 'pack.png'
+    tags:
+    - '*'
 
 
 jobs:
