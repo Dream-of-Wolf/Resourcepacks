@@ -1,0 +1,28 @@
+name: Create ResourcePack
+
+on:
+  branches:
+  - main
+  paths:
+  - 'assets/**'
+  - 'pack.mcmeta'
+  - 'pack.png'
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: Package resourcePack
+      uses: thedoctor0/zip-release@master
+      with:
+        type: 'zip'
+        filename: 'Resource-Pack.zip'
+        exclusions: '*.git* .github* README.md'
+
+    - name: Upload release
+      uses: ncipollo/release-action@v1
+      with:
+        artifacts: "Resource-Pack.zip"
+        token: ${{ secrets.GITHUB_TOKEN }}
