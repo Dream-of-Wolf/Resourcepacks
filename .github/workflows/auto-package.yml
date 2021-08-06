@@ -50,5 +50,5 @@ jobs:
         with:
           upload_url: ${{ steps.release.outputs.upload_url }} 
           asset_path: ./Resource-Pack.zip
-          asset_name: Resource-Pack-${{ steps.version.outputs.new_tag }}.zip
+          asset_name: Resource-Pack.zip
           asset_content_type: application/zip
