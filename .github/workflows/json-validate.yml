@@ -22,4 +22,4 @@ jobs:
         uses: docker://orrosenblatt/validate-json-action:latest
         env:
           INPUT_SCHEMA: .github/schema.json 
-          INPUT_JSONS: assets/**.json
+          INPUT_JSONS: assets/minecraft/models/item/*.json
