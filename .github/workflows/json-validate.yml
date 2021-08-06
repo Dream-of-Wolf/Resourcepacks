@@ -23,6 +23,6 @@ jobs:
         env:
           token: ${{ secrets.GITHUB_TOKEN }}
           json_schema: .github/schema.json 
-          json_path_pattern: [a-zA-Z_]*\.json$
+          json_path_pattern: "[a-zA-Z_]*.json"
           send_comment: false
           clear_comments: false
