@@ -19,10 +19,8 @@ jobs:
         uses: actions/checkout@master
 
       - name: Validate JSON
-        uses: snapcart/json-schema-validator@v1.0.0
+        uses: mcandeia/json-schema-validator@v1.0.0
         env:
           token: ${{ secrets.GITHUB_TOKEN }}
-          json_schema: .github/schema.json 
-          json_path_pattern: "[a-zA-Z_]*.json"
-          send_comment: false
-          clear_comments: false
+          send_comment: true
+          clear_comments: true
