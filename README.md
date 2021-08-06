@@ -1,0 +1,4 @@
+# Resourcepacks
+
+All textures from the inital commit are copyright by LuoYeh .
+所有材質的著作權歸屬於 LuoYeh.
