@@ -19,8 +19,7 @@ jobs:
         uses: actions/checkout@master
 
       - name: Validate JSON
-        uses: mcandeia/json-schema-validator@v1.0.0
+        uses: Zingabopp/JsonValidate-Action@v1
         env:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          send_comment: true
-          clear_comments: true
+          json-schema: .github/schema.json
+          json-file: assets/**/*.json
