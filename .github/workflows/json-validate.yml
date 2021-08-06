@@ -19,7 +19,10 @@ jobs:
         uses: actions/checkout@master
 
       - name: Validate JSON
-        uses: docker://orrosenblatt/validate-json-action:latest
+        uses: snapcart/json-schema-validator@v1.0.0
         env:
-          INPUT_SCHEMA: .github/schema.json 
-          INPUT_JSONS: assets/minecraft/models/item/*.json
+          token: ${{ secrets.GITHUB_TOKEN }}
+          json_schema: .github/schema.json 
+          json_path_pattern: assets/minecraft/models/item/*.json
+          send_comment: false
+          clear_comments: false
