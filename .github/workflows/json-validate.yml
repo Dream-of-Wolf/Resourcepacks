@@ -1,0 +1,25 @@
+name: Validate Jsons
+
+on: [push]
+
+  #push:
+  #  paths:
+  #    - 'assets/**.json'
+  #pull_request:
+  #  paths:
+  #    - 'assets/**.json'
+
+jobs:
+  json-verify:
+    runs-on: ubuntu-latest
+    if: github.repository == 'Dream-of-Wolf/Resourcepacks'
+
+    steps:
+      - name: Checking Repostiory
+        uses: actions/checkout@master
+
+      - name: Validate JSON
+        uses: docker://orrosenblatt/validate-json-action:latest
+        env:
+          #INPUT_SCHEMA: 
+          INPUT_JSONS: assets/**.json

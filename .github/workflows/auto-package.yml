@@ -1,4 +1,4 @@
-name: Create ResourcePack
+name: Create Resourcepack
 
 on:
   push:
@@ -10,7 +10,7 @@ on:
     - 'pack.png'
 
 jobs:
-  build:
+  auto-resourcepack:
     runs-on: ubuntu-latest
     if: github.repository == 'Dream-of-Wolf/Resourcepacks'
 
