@@ -1,0 +1,11 @@
+{
+"parent": "build/generated",
+"textures": {
+"layer0": "item/diamond_sword"
+},
+
+"overrides": [
+{"predicate": {"custom_model_data":1}, "model": "item/circle01"},
+{"predicate": {"custom_model_data":2}, "model": "item/circle01"}
+]
+}
