@@ -34,7 +34,7 @@ jobs:
         with:
           type: 'zip'
           filename: 'Resource-Pack.zip'
-          exclusions: '*.git* .github* README.md'
+          exclusions: '*.git* .github*'
 
       - name: Create Release
         id: release
