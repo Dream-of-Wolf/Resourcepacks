@@ -7,6 +7,8 @@
 "overrides": [
 {"predicate": {"custom_model_data":1}, "model": "item/mask01"},
 {"predicate": {"custom_model_data":2}, "model": "item/mask02"},
-{"predicate": {"custom_model_data":3}, "model": "item/neko01"}
+{"predicate": {"custom_model_data":3}, "model": "item/neko01"},
+{"predicate": {"custom_model_data":4}, "model": "item/magmacubehat"},
+{"predicate": {"custom_model_data":5}, "model": "item/chickenhat"}
 ]
 }
