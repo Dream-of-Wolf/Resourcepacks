@@ -1,0 +1,35 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "blocks/player01",
+		"particle": "blocks/player01"
+	},
+	"elements": [
+		{
+			"from": [2.3, 1.7, -0.1],
+			"to": [6.3, 7.1, -0.1],
+			"faces": {
+				"north": {"uv": [0, 0, 4, 5], "texture": "#missing"},
+				"east": {"uv": [0, 0, 0, 5], "texture": "#missing"},
+				"south": {"uv": [0, 0, 15.92889, 15.92889], "texture": "#0"},
+				"west": {"uv": [0, 0, 0, 5], "texture": "#missing"},
+				"up": {"uv": [0, 0, 4, 0], "texture": "#missing"},
+				"down": {"uv": [0, 0, 4, 0], "texture": "#missing"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"scale": [0, 0, 0]
+		},
+		"thirdperson_lefthand": {
+			"scale": [0, 0, 0]
+		},
+		"firstperson_lefthand": {
+			"translation": [-9.25, 12.3, 14.2]
+		},
+		"gui": {
+			"scale": [0, 0, 0]
+		}
+	}
+}

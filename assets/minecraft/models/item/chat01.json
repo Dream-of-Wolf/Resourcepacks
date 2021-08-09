@@ -2,8 +2,9 @@
 	"credit": "Made with Blockbench",
 	"ambientocclusion": false,
 	"textures": {
-		"0": "blocks/2020-04-11_11",
-		"particle": "blocks/2020-04-11_11"
+		"0": "blocks/chat01",
+		"1": "blocks/chat02",
+		"particle": "blocks/chat01"
 	},
 	"elements": [
 		{
@@ -17,11 +18,32 @@
 				"up": {"uv": [0, 0, 16, 0], "texture": "#missing"},
 				"down": {"uv": [0, 0, 16, 0], "texture": "#missing"}
 			}
+		},
+		{
+			"from": [-1, -0.5, -0.5],
+			"to": [17, 10, -0.5],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 8.5], "texture": "#missing"},
+				"east": {"uv": [0, 0, 0, 8.5], "texture": "#missing"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#1"},
+				"west": {"uv": [0, 0, 0, 8.5], "texture": "#missing"},
+				"up": {"uv": [0, 0, 16, 0], "texture": "#missing"},
+				"down": {"uv": [0, 0, 16, 0], "texture": "#missing"}
+			}
 		}
 	],
 	"display": {
+		"thirdperson_righthand": {
+			"scale": [0, 0, 0]
+		},
+		"thirdperson_lefthand": {
+			"scale": [0, 0, 0]
+		},
 		"firstperson_righthand": {
 			"translation": [-9, 12.3, 14.2]
+		},
+		"gui": {
+			"scale": [0, 0, 0]
 		}
 	}
 }
