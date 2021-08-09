@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"ambientocclusion": false,
 	"textures": {
-		"0": "Downloads/2020-04-11_11",
-		"particle": "Downloads/2020-04-11_11"
+		"0": "blocks/2020-04-11_11",
+		"particle": "blocks/2020-04-11_11"
 	},
 	"elements": [
 		{
