@@ -127,8 +127,17 @@
 		}
 	],
 	"display": {
+		"thirdperson_righthand": {
+			"rotation": [71, 0, 0],
+			"translation": [0, 0, -3.25]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [71, 0, 0],
+			"translation": [0, 0, -3.25]
+		},
 		"head": {
-			"translation": [0, 9.5, -3.5]
+			"translation": [-1.25, 10, -3.5],
+			"scale": [1.2, 1.2, 1.2]
 		}
 	},
 	"groups": [
