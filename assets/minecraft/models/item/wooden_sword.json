@@ -7,6 +7,6 @@
 "overrides": [
 {"predicate": {"custom_model_data":1}, "model": "item/decoration/01spruce_chair"},
 {"predicate": {"custom_model_data":2}, "model": "item/decoration/02spruce_window"},
-{"predicate": {"custom_model_data":2}, "model": "item/decoration/03spruce_frame"}
+{"predicate": {"custom_model_data":3}, "model": "item/decoration/03spruce_frame"}
 ]
 }
