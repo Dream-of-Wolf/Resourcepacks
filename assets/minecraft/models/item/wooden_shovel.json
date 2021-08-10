@@ -1,0 +1,11 @@
+{
+"parent": "item/generated",
+"textures": {
+"layer0": "item/wooden_shovel"
+},
+
+"overrides": [
+{"predicate": {"custom_model_data":1}, "model": "item/chat/npc/chat01"},
+{"predicate": {"custom_model_data":1}, "model": "item/chat/npc/chat01"}
+]
+}

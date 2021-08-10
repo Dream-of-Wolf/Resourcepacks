@@ -5,7 +5,7 @@
 },
 
 "overrides": [
-{"predicate": {"custom_model_data":1}, "model": "item/chair01"},
-{"predicate": {"custom_model_data":2}, "model": "item/chair01"}
+{"predicate": {"custom_model_data":1}, "model": "item/decoration/chair01"},
+{"predicate": {"custom_model_data":2}, "model": "item/decoration/chair01"}
 ]
 }
