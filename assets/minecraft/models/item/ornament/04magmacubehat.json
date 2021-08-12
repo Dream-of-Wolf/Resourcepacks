@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "blocks/ornament/magmacube",
-		"particle": "blocks/ornament/magmacube"
+		"0": "blocks/ornament/magmacube/magmacube",
+		"particle": "blocks/ornament/magmacube/magmacube"
 	},
 	"elements": [
 		{

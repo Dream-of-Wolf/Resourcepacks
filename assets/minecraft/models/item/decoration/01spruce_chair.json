@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "blocks/decoration/spruce_planks",
-		"1": "blocks/decoration/spruce_trapdoor",
+		"1": "blocks/decoration/spruce_door_top",
 		"particle": "blocks/decoration/spruce_planks"
 	},
 	"elements": [
