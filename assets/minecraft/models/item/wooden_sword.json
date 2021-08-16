@@ -8,6 +8,7 @@
 {"predicate": {"custom_model_data":1}, "model": "item/decoration/01spruce_chair"},
 {"predicate": {"custom_model_data":2}, "model": "item/decoration/02spruce_window"},
 {"predicate": {"custom_model_data":3}, "model": "item/decoration/03spruce_frame"},
-{"predicate": {"custom_model_data":4}, "model": "item/decoration/04spruce_wheels"}
+{"predicate": {"custom_model_data":4}, "model": "item/decoration/04spruce_wheels"},
+{"predicate": {"custom_model_data":5}, "model": "item/decoration/05oak_chair"}
 ]
 }
