@@ -206,7 +206,24 @@
 	"display": {
 		"thirdperson_righthand": {
 			"rotation": [0, -86, 0],
-			"translation": [-1, 8.25, 2.5]
+			"translation": [-1, 8.25, 1.5]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [0, 86, 0],
+			"translation": [1, 8.25, 1.5]
+		},
+		"firstperson_righthand": {
+			"rotation": [-64, -86, -19],
+			"translation": [-2.5, 9.25, -2.75]
+		},
+		"ground": {
+			"rotation": [90, 0, 0],
+			"translation": [0, -2.5, 2.75]
+		},
+		"gui": {
+			"rotation": [33, 0, -49],
+			"translation": [1.75, 0.5, 0],
+			"scale": [0.8, 0.8, 0.8]
 		}
 	},
 	"groups": [0, 1,
