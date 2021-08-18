@@ -1,0 +1,64 @@
+{
+	"credit": "Made with Blockbench",
+	"ambientocclusion": false,
+	"textures": {
+		"0": "blocks/decoration/spruce_door_top",
+		"particle": "blocks/decoration/spruce_door_top"
+	},
+	"elements": [
+		{
+			"from": [3, 0, 0],
+			"to": [4, 1, 2],
+			"faces": {
+				"north": {"uv": [0, 4, 1, 5], "texture": "#0"},
+				"east": {"uv": [4, 4, 6, 5], "rotation": 180, "texture": "#0"},
+				"south": {"uv": [0, 0, 1, 1], "texture": "#missing"},
+				"west": {"uv": [10, 4, 12, 5], "texture": "#0"},
+				"up": {"uv": [1, 4, 3, 5], "rotation": 90, "texture": "#0"},
+				"down": {"uv": [7, 4, 9, 5], "rotation": 270, "texture": "#0"}
+			}
+		},
+		{
+			"from": [3, 0, 2],
+			"to": [4, 2, 3],
+			"faces": {
+				"north": {"uv": [5, 4, 6, 5], "rotation": 90, "texture": "#0"},
+				"east": {"uv": [5, 4, 6, 5], "rotation": 90, "texture": "#0"},
+				"south": {"uv": [5, 4, 6, 5], "rotation": 90, "texture": "#0"},
+				"west": {"uv": [5, 4, 6, 5], "rotation": 90, "texture": "#0"},
+				"up": {"uv": [5, 4, 6, 5], "rotation": 90, "texture": "#0"},
+				"down": {"uv": [5, 4, 6, 5], "rotation": 90, "texture": "#0"}
+			}
+		},
+		{
+			"from": [12, 0, 0],
+			"to": [13, 1, 2],
+			"faces": {
+				"north": {"uv": [0, 4, 1, 5], "texture": "#0"},
+				"east": {"uv": [4, 4, 6, 5], "rotation": 180, "texture": "#0"},
+				"south": {"uv": [0, 0, 1, 1], "texture": "#missing"},
+				"west": {"uv": [10, 4, 12, 5], "texture": "#0"},
+				"up": {"uv": [1, 4, 3, 5], "rotation": 90, "texture": "#0"},
+				"down": {"uv": [7, 4, 9, 5], "rotation": 270, "texture": "#0"}
+			}
+		},
+		{
+			"from": [12, 0, 2],
+			"to": [13, 2, 3],
+			"faces": {
+				"north": {"uv": [5, 4, 6, 5], "rotation": 90, "texture": "#0"},
+				"east": {"uv": [5, 4, 6, 5], "rotation": 90, "texture": "#0"},
+				"south": {"uv": [5, 4, 6, 5], "rotation": 90, "texture": "#0"},
+				"west": {"uv": [5, 4, 6, 5], "rotation": 90, "texture": "#0"},
+				"up": {"uv": [5, 4, 6, 5], "rotation": 90, "texture": "#0"},
+				"down": {"uv": [5, 4, 6, 5], "rotation": 90, "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"fixed": {
+			"rotation": [0, -180, 0],
+			"translation": [-1.75, 37.75, -8]
+		}
+	}
+}
