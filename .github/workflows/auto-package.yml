@@ -26,13 +26,6 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Crate version
-        id: version
-        uses: anothrNick/github-tag-action@1.35.0
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          WITH_V: true
-
       - name: Package & Optimize Resourcepack
         uses: ComunidadAylas/PackSquash-action@master
         with:
@@ -40,9 +33,16 @@ jobs:
           path: Resource-Pack.zip
 
           #Setting
-          recompress_compressed_files: true
-          zip_spec_conformance_level: disregard
-          size_increasing_zip_obfuscation: false
+          #recompress_compressed_files: true
+          #zip_spec_conformance_level: disregard
+          #size_increasing_zip_obfuscation: false
+
+      - name: Crate version
+        id: version
+        uses: anothrNick/github-tag-action@1.35.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          WITH_V: true
 
       - name: Create Release
         uses: softprops/action-gh-release@master
