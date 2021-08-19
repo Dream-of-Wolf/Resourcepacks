@@ -27,9 +27,11 @@ jobs:
           fetch-depth: 0
 
       - name: Package & Optimize Resourcepack
-        uses: ComunidadAylas/PackSquash-action@v1.0.2
+        uses: ComunidadAylas/PackSquash-action@master
         with:
-          path: Resource-Pack.zip
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          path: .
+          options_file: Resource-Pack.zip
 
           #Setting
           recompress_compressed_files: true
