@@ -28,7 +28,6 @@ jobs:
 
       - name: Package & Optimize Resourcepack
         uses: ComunidadAylas/PackSquash-action@master
-        if: always()
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           path: .
@@ -41,6 +40,7 @@ jobs:
       - name: Crate version
         id: version
         uses: anothrNick/github-tag-action@1.35.0
+        if: ${{ failure() }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           WITH_V: true
