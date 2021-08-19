@@ -16,11 +16,15 @@ on:
 jobs:
   auto-resourcepack:
     runs-on: ubuntu-latest
-    if: github.repository == 'Dream-of-Wolf/Resourcepacks'
+    if: |
+      github.repository == 'Dream-of-Wolf/Resourcepacks' ||
+      contains(github.event.head_commit.message, '[ci skip]') == false
 
     steps:
       - name: Checking Repostiory
         uses: actions/checkout@master
+        with:
+          fetch-depth: 0
 
       - name: Crate version
         id: version
@@ -29,30 +33,19 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           WITH_V: true
 
-      - name: Package resourcepack
-        uses: thedoctor0/zip-release@master
+      - name: Package & Optimize Resourcepack
+        uses: ComunidadAylas/PackSquash-action@master
         with:
-          type: 'zip'
-          filename: 'Resource-Pack.zip'
-          exclusions: '*.git* .github*'
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          path: Resource-Pack.zip
+
+          #Setting
+          recompress_compressed_files: true
+          zip_spec_conformance_level: disregard
+          size_increasing_zip_obfuscation: false
 
       - name: Create Release
-        id: release
-        uses: actions/create-release@v1.1.4
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        uses: softprops/action-gh-release@master
         with:
           tag_name: ${{ steps.version.outputs.new_tag }}
-          release_name: ${{ steps.version.outputs.new_tag }}
-          draft: false
-          prerelease: false
-
-      - name: Upload Resourcepack
-        uses: actions/upload-release-asset@v1.0.2
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.release.outputs.upload_url }} 
-          asset_path: ./Resource-Pack.zip
-          asset_name: Resource-Pack.zip
-          asset_content_type: application/zip
+          files: ./Resource-Pack.zip
