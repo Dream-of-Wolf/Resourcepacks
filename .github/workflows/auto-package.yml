@@ -47,6 +47,7 @@ jobs:
 
       - name: Create Release
         uses: softprops/action-gh-release@master
+        if: ${{ failure() }}
         with:
           tag_name: ${{ steps.version.outputs.new_tag }}
           files: /opt/action/pack.zip
