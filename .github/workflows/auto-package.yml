@@ -37,6 +37,13 @@ jobs:
           zip_spec_conformance_level: disregard
           size_increasing_zip_obfuscation: false
 
+      - name: DownloadArtifact
+        uses: actions/download-artifact@v2
+        if: ${{ failure() }}
+        with:
+          name: pack.zip
+          path: ./
+
       - name: Crate version
         id: version
         uses: anothrNick/github-tag-action@1.35.0
@@ -50,4 +57,4 @@ jobs:
         if: ${{ failure() }}
         with:
           tag_name: ${{ steps.version.outputs.new_tag }}
-          files: /opt/action/pack.zip
+          files: ./pack.zip
