@@ -32,7 +32,7 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           path: .
-          options_file: Resource-Pack.zip
+          #options_file: Resource-Pack.zip
 
           #Setting
           zip_spec_conformance_level: disregard
@@ -49,4 +49,4 @@ jobs:
         uses: softprops/action-gh-release@master
         with:
           tag_name: ${{ steps.version.outputs.new_tag }}
-          files: ${{ github.workspace }}/Resource-Pack.zip
+          files: /opt/action/pack.zip
