@@ -35,7 +35,7 @@ jobs:
 
           #Setting
           zip_spec_conformance_level: disregard
-          size_increasing_zip_obfuscation: false
+          size_increasing_zip_obfuscation: true
 
       - name: DownloadArtifact
         uses: actions/download-artifact@v2
@@ -43,10 +43,6 @@ jobs:
         with:
           name: Optimized pack
           path: ./
-      - shell: bash
-        run: |
-          unzip ./Optimized pack.zip ||
-          mv ./Optimized pack/pack.zip ./Resourcepack.zip
 
       - name: Crate version
         id: version
