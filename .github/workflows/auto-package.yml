@@ -39,7 +39,6 @@ jobs:
 
       - name: DownloadArtifact
         uses: actions/download-artifact@v2
-        if: ${{ failure() }}
         with:
           name: Optimized pack
           path: ./
@@ -47,14 +46,12 @@ jobs:
       - name: Crate version
         id: version
         uses: anothrNick/github-tag-action@1.35.0
-        if: ${{ failure() }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           WITH_V: true
 
       - name: Create Release
         uses: softprops/action-gh-release@master
-        if: ${{ failure() }}
         with:
           tag_name: ${{ steps.version.outputs.new_tag }}
           files: ./pack.zip
