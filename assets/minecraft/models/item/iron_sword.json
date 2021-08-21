@@ -6,7 +6,7 @@
 
 "overrides": [
 {"predicate": {"custom_model_data":1}, "model": "item/knife/01fire_sword"},
-{"predicate": {"custom_model_data":2}, "model": "item/knife/01fire_sword"},
+{"predicate": {"custom_model_data":2}, "model": "item/knife/02wooden_sword"},
 {"predicate": {"custom_model_data":3}, "model": "item/knife/01fire_sword"}
 ]
 }
