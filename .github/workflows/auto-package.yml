@@ -66,4 +66,3 @@ jobs:
           -d '{
           "command": "brp generatehashes"
           }'
-
