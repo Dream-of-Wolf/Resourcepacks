@@ -55,3 +55,14 @@ jobs:
         with:
           tag_name: ${{ steps.version.outputs.new_tag }}
           files: ./pack.zip
+
+      - name: Proxy Update Resourcepack
+        run: |
+          curl "https://${{ secrets.PanelDomain }}/api/client/servers/baf04656/command" \
+          -H 'Accept: application/json' \
+          -H 'Content-Type: application/json' \
+          -H 'Authorization: Bearer ${{ secrets.APIToken }}' \
+          -X POST \
+          -d '{
+          "command": "brp generatehashes"
+          }'
