@@ -64,5 +64,5 @@ jobs:
           -H 'Authorization: Bearer ${{ secrets.APIToken }}' \
           -X POST \
           -d '{
-          "command": "brp generatehashes"
+          "command": "vrp generatehashes"
           }'
