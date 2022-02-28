@@ -11,6 +11,13 @@
 {"predicate": {"custom_model_data":4}, "model": "item/decoration/04spruce_wheels"},
 {"predicate": {"custom_model_data":5}, "model": "item/decoration/05spruce_chair"},
 {"predicate": {"custom_model_data":6}, "model": "item/decoration/06spruce_table"},
-{"predicate": {"custom_model_data":7}, "model": "item/decoration/07item_rack"}
+{"predicate": {"custom_model_data":7}, "model": "item/decoration/07item_rack"},
+{"predicate": {"custom_model_data":8}, "model": "item/decoration/08blue_mushroom"},
+{"predicate": {"custom_model_data":9}, "model": "item/decoration/09wooden_barrel"},
+{"predicate": {"custom_model_data":10}, "model": "item/decoration/10big_wooden_barrel"},
+{"predicate": {"custom_model_data":11}, "model": "item/decoration/11full_wooden_barrel"},
+{"predicate": {"custom_model_data":12}, "model": "item/decoration/12earth"},
+{"predicate": {"custom_model_data":13}, "model": "item/decoration/13shortknife"},
+{"predicate": {"custom_model_data":14}, "model": "item/decoration/14shortknife2"}
 ]
 }
